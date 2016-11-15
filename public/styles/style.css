@@ -1,0 +1,37 @@
+a {
+  text-decoration: none;
+  color: firebrick;
+}
+a:hover {
+  color: yellow;
+}
+body {
+  font-size: 20px;
+  background-color: forestgreen;
+  background-image: url('../background.jpg');
+  background-repeat: no-repeat;
+}
+
+.mainstuff {
+  color: black;
+  -webkit-text-stroke: .5px black;
+  -webkit-text-fill-color: blue;
+}
+
+li {
+  background-color: rgba(255,255,255,.6);
+  color: black;
+  border: 1px solid black;
+  list-style: none;
+  margin-right: 50vw;
+}
+.footerstuff {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.formmain {
+  background-color: rgba(211,211,211,.8);
+  border: 1px solid black;
+  margin-right: 50vw;
+}

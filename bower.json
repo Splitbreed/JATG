@@ -1,0 +1,19 @@
+{
+  "name": "jatg",
+  "description": "text adventure",
+  "main": "server.js",
+  "license": "ISC",
+  "homepage": "https://github.com/Splitbreed/JATG",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.2",
+    "angular-flash-alert": "^2.4.0"
+  }
+}

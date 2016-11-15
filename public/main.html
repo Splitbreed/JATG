@@ -1,0 +1,20 @@
+<div class="mainstuff">
+  <div class='formmain'>
+<h2>Create a new Chore!</h2>
+<form ng-submit="chore.newChore(chore.newInfo)" method="post">
+  <label for="name">Name:</label>  <input type="text" name="name" value="" ng-model="chore.newInfo.name"><br>
+  <label for="description">Description: </label><input type="textarea" name="description" ng-model="chore.newInfo.description"><br><br>
+  <label for="urgent">Urgent?<br> </label> Yes:<input type="radio" name="urgent" value="true" ng-model="chore.newInfo.urgent"><br>No:<input type="radio" name="urgent" value="false" ng-model="chore.newInfo.urgent">
+  <button type="submit" name="submit">Create!</button>
+</form></div>
+
+<ul ng-repeat="chores in chore.allChores track by $index">
+  <li>
+    <h3>Name: {{chores.name}}</h3>
+    <p>Description: {{chores.description}}</p>
+    <span>Urgent: <span ng-if="chores.urgent == true">yes</span><span ng-if="chores.urgent == false">no</span></span><br>
+    <a href='#/all' ng-click="chore.updateChore($index)">Toggle Urgency</a><br>
+      <button type="button" name="delete" ng-click="chore.deleteChore(chores._id, $index)">Done? Remove it!</button>
+  </li>
+</ul>
+</div>
